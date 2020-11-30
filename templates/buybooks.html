@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <title>Buy Books</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UX-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        header {
+            background-image: url('https://raw.githubusercontent.com/SOUMITRA1208/aarambh2020-MediLink/master/book.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 150px;
+            position: relative;
+            background-position: cover;
+            color: #ffffff;
+            font-family: cursive;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 50px 60px 0px 50px;
+
+        }
+
+        nav li {
+            list-style: none;
+            diplay: inline-block;
+            padding-right: 10px;
+            padding-left: 20px;
+
+        }
+
+        nav li span {
+            padding-left: 5px;
+        }
+
+        li a {
+            padding: 5px;
+            background-color: #fff;
+            text-decoration: none;
+        }
+
+        .cart-outine ion-icon {
+            color: blue;
+        }
+
+        #home {
+            position: absolute;
+            left: 54%;
+            top: 43%;
+        }
+
+        #abt {
+            position: absolute;
+            left: 65%;
+            top: 42.5%;
+        }
+
+        #cartt {
+            position: absolute;
+            left: 80%;
+            top: 41%;
+        }
+
+        .container .products-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            padding-bottom: 100px;
+        }
+
+        .image {
+            margin-top: 5%;
+            margin-right: auto;
+            margin-left: 40%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .add-cart {
+            position: absolute;
+            width: 100%;
+            background-color: darkgrey;
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .image:hover .cart1,
+        .image:hover .cart2,
+        .image:hover .cart3,
+        .image:hover .cart4,
+        .image:hover .cart5,
+        .image:hover .cart6 {
+            bottom: 50px;
+            opacity: 1;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        #book1 {}
+
+        #book2 {}
+
+        #book3 {}
+
+        #book4 {}
+
+        #book5 {}
+
+        .products-container {
+            max-width: 650px;
+            justify-content: space-around;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .products-container .product-header {
+            width: 100%;
+            max-width: 650px;
+            display: flex;
+            justify-content: flex-start;
+            border-bottom: 4px solid lightgrey;
+            margin: 0 auto;
+        }
+
+        .product-title {
+            width: 45%;
+        }
+
+        .price {
+            width: 15%;
+
+            display: flex;
+            align-item: center;
+        }
+
+        .quantity {
+            width: 30%;
+            border-bottom: 1px solid lightgray;
+            display: flex;
+            align-items: center;
+        }
+
+        .total {
+            width: 10%;
+            border-bottom: 4px solid lightgray;
+            display: flex;
+            align-item: center;
+        }
+
+        .product {
+            width: 45%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid lightgray;
+        }
+
+        product ion-icon {
+            cursor: pointer;
+        }
+
+        .products {
+            width: 100% display:flex;
+            flex-wrap: wrap;
+        }
+
+        .products img {
+            width: 75px;
+        }
+
+        .basketTotalContainer {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            padding 10px 0;
+        }
+
+        .basketTotalTitle {
+            width: 30%;
+        }
+
+        .basketTotal {
+            width: 10%;
+        }
+    </style>
+
+
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <ul>
+                <h1>Buy Books</h1>
+                <li id="home"><a href="{% url 'buybooks' %}">Home</a></li>
+                <li id="abt"><a href="#">About</a></li>
+                <li class="cart" id="cartt">
+                    <a href="cart.html">
+                        <ion-icon name="cart-outline">cart</ion-icon>
+                        <span class="cartspann">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+        <div class="image" id="book2">
+            <img src="https://raw.githubusercontent.com/SOUMITRA1208/aarambh2020-MediLink/master/dictionary.jpg" alt="book1">
+            <h3>Dictionary of Computer Science</h3>
+            <h3>Rs 100</h3>
+            <a class="add-cart cart2" href="#">Add to Cart</a>
+            <input type="hidden" value="100" />
+        </div>
+        <div class="image" id="book3">
+            <img src="https://raw.githubusercontent.com/SOUMITRA1208/aarambh2020-MediLink/master/Forensics.jpg" alt="book1">
+            <h3>Digital Forensics and Cyber Crime </h3>
+            <h3>Rs 100</h3>
+            <a class="add-cart cart3" href="#">Add to Cart</a>
+            <input type="hidden" value="100" />
+        </div>
+        <div class="image" id="book4">
+            <img src="https://raw.githubusercontent.com/SOUMITRA1208/aarambh2020-MediLink/master/mechanics.jpg" alt="book1">
+            <h3>Engineering Mechanics</h3>
+            <h3>Rs 100</h3>
+            <a class="add-cart cart4" href="#">Add to Cart</a>
+            <input type="hidden" value="100" />
+        </div>
+        <div class="image" id="book5">
+            <img src="https://raw.githubusercontent.com/SOUMITRA1208/aarambh2020-MediLink/master/CSE.jpg" alt="book1">
+            <h3>Computer Science Engineering</h3>
+            <h3>Rs 100</h3>
+            <a class="add-cart cart5" href="#">Add to Cart</a>
+            <input type="hidden" value="200" />
+        </div>
+        <div class="image" id="book6">
+            <img src="https://raw.githubusercontent.com/SOUMITRA1208/aarambh2020-MediLink/master/civil2.jpg" alt="book1">
+            <h3>Building Materials</h3>
+            <h3>Rs 100</h3>
+            <a class="add-cart cart6" href="#">Add to Cart</a>
+            <input type="hidden" value="100" />
+        </div>
+
+        <script>
+
+            let carts = document.querySelectorAll('.add-cart');
+
+            let products =
+                [
+                    {
+                        name: 'Dictionary',
+                        tag: 'dictionary',
+                        price: 100,
+                        inCart: 0
+                    },
+                    {
+                        name: 'Forensic',
+                        tag: 'forensics',
+                        price: 100,
+                        inCart: 0
+                    },
+                    {
+                        name: 'Mechanics',
+                        tag: 'mechanics',
+                        price: 100,
+                        inCart: 0
+                    },
+                    {
+                        name: 'Computer Science',
+                        tag: 'CSE',
+                        price: 200,
+                        inCart: 0
+                    },
+                    {
+                        name: 'Building Material',
+                        tag: 'civil2',
+                        price: 100,
+                        inCart: 0
+                    }
+
+                ];
+
+            for (let i = 0; i < carts.length; i++) {
+                carts[i].addEventListener('click', () => {
+                    cartNumbers(products[i]);
+                    totalCost(products[i])
+                })
+            }
+
+            function onLoadCartNumbers() {
+                let productNumbers = localStorage.getItem('cartNumbers');
+
+                if (productNumbers) {
+                    document.querySelector(' .cartspann').textContent = productNumbers;
+                }
+            }
+            function cartNumbers(product) {
+
+                let productNumbers = localStorage.getItem('cartNumbers');
+                productNumbers = parseInt(productNumbers);
+                if (productNumbers) {
+                    localStorage.setItem('cartNumbers', productNumbers + 1);
+                    document.querySelector(' .cartspann').textContent = productNumbers + 1;
+                }
+                else {
+                    localStorage.setItem('cartNumbers', 1);
+                    document.querySelector(' .cartspann').textContent = 1;
+
+                }
+                setItems(product);
+            }
+
+            function setItems(product) {
+                let cartItems = localStorage.getItem('productsInCart');
+                cartItems = JSON.parse(cartItems);
+
+
+                if (cartItems != null) {
+                    if (cartItems[product.tag] == undefined) {
+                        cartItems = {
+                            ...cartItems,
+                            [product.tag]: product
+                        }
+                    }
+                    cartItems[product.tag].inCart += 1;
+                }
+                else {
+                    product.inCart = 1;
+                    cartItems =
+                    {
+                        [product.log]: product
+                    }
+                }
+
+                localStorage.setItem("productsInCart", JSON.stringify
+                    (cartItems));
+
+            }
+            function totalCost(product) {
+                let cartCost = localStorage.getItem('totalCost');
+
+                console.log("my cart cost", cartCost);
+                console.log(typeof cartCost);
+
+                if (cartCost != null) {
+                    cartCost = parseInt(cartCost);
+                    localStorage.setItem("totalCost", cartCost +
+                        product.price);
+
+                }
+                else {
+                    localStorage.setItem("totalCost", product.price);
+
+                }
+            }
+
+            function displayCart() {
+                let cartItems = localStorage.getItem("productsInCart");
+                cartItems = JSON.parse(cartItems);
+                let productContainer = document.querySelector
+                    (".products");
+                if (cartItems && productContainer) {
+                    productContainer.innerHTML = '';
+                    Object.values(cartItems).map(item => {
+                        productContainer.innerHTML += `
+                <div class="product">
+                    <ion-icon name="close-circle" class="cross"></ion-icon>
+                    <img src="./images/${item.tag}.jpg">                                            
+                    <span>${item.name}</span>
+                </div>
+                <div class="price">${item.name}</div>
+                <div class="quantity">
+                    <ion-icon name="caret-back-outline"></ion-icon>
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                    <span>${item.inCart}</span>
+                     
+                </div>
+                <div class="total">
+                    ${item.inCart * item.price},00
+                </div>                `
+                    });
+                    productContainer.innerHTML += `
+    		    <div class="basketTotalContainer">
+    		        <h4 class="basketTotalTitle">
+    		            Basket Total
+                    </h4>
+                    <h4 class="basketTotal">
+                        $${cartCost},00
+                    </h4>
+                `;
+                }
+
+            }
+            onLoadCartNumbers();
+            displayCart();
+
+        </script>
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Study Materials</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .container {
+            background-color: #fae3ac;
+            margin-left: 15%;
+        }
+
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        #headDivision {
+            background-color: #f57f36;
+        }
+
+        .searchBar {
+            width: 30%;
+            border-width: 2px
+        }
+
+        .searchBar:focus {
+            width: 70%;
+        }
+
+        a {
+            color: #1414fc;
+        }
+
+        .sideNavBar {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            position: fixed;
+            width: 15%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sideList {
+            color: #c4f9ff;
+        }
+
+        #notes {
+            color: #ffff00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="headDivision2" class="sideNavBar">
+        <ul id="notes">Notes:-
+            <li><a class="sideList" href="#firstYearNotes">1st Year - click here</a></li>
+            <li><a class="sideList" href="#secondYearNotes">2nd Year - click here</a></li>
+            <li><a class="sideList" href="#thirdYearNotes">3rd Year - click here</a></li>
+            <li><a class="sideList" href="#fourthYearNotes">4th Year - click here </a></li>
+        </ul>
+        <ul id="notes">Syllabus:-
+            <li><a class="sideList" href="https://www.medicaps.ac.in/upload/medicapsuniv/page/1580700812.pdf">1st Year -
+                    click here</a></li>
+            <li><a class="sideList" href="#secondYearSyllabus">2nd Year - click here</a></li>
+            <li><a class="sideList" href="#thirdYearSyllabus">3rd Year - click here</a></li>
+            <li><a class="sideList" href="#fourthYearSyllabus">4th Year - click here</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div id="headDivision">
+            <h1><u><b>Study Materials </b></u></h1>
+            <p style="font-size:20px">There are all study materials like notes and syllabus that you will need.</p>
+        </div>
+
+        <div id="FirstYear">
+            <h2 id="firstYearNotes"><u><b>First Year Notes</b></u></h2>
+            <input type="text" id="firstYearSearch" name="myInput" onkeyup="mySearchFunction()"
+                placeholder="Enter subject..." class="searchBar">
+            <ul id="firstYearSubjects">
+                <li><a href="">Basic Computer Engineering(BCE) notes</a></li>
+                <li><a href="">Basic Mechanical Engineering(BME) notes</a></li>
+                <li><a href="">Basic Electrical and Electronics Engineering(BEEE) notes</a></li>
+                <li><a href="">Basic Civil Engineering(BCE) notes</a></li>
+                <li><a href="">Engineering Chemistry notes</a></li>
+                <li><a href="">Engineering Physics notes</a></li>
+                <li><a href="">Engineering Mathematics(M1) notes</a></li>
+                <li><a href="">Higher Order Mathematics(M2) notes</a></li>
+            </ul </div>
+
+            <div id="secondYear">
+                <h2 id="secondYearNotes"><u><b>Second Year Notes</b></u></h2>
+                <input type="text" id="secondYearBranch" name="myInput" onkeyup="mySearchFunction2()"
+                    placeholder="Enter subject..." class="searchBar">
+                <h4>Branches</h4>
+                <ul id="secondYearSubjects">
+                    <li><b>Computer Science Engineering(CSE)</b></li>
+                    <ul>
+                        <li><a href="">Digital Electronics(DE)</a></li>
+                        <li><a href="">Object Oriented Programming(OOP)</a></li>
+                        <li><a href="">Computer System Architecture(CSA)</a></li>
+                        <li><a href="">Discrete Mathematics(DM)</a></li>
+                        <li><a href="">Data Structures(DS)</a></li>
+                        <li><a href="">Technical English</a></li>
+                    </ul>
+                    <li><b>Mechanical Engineering(ME)</b></li>
+                    <ul>
+                        <li><a href="">Engineering Materials</a></li>
+                        <li><a href="">Fluid Mechanics</a></li>
+                        <li><a href="">Engineering Thermodynamics</a></li>
+                        <li><a href="">Theory of Machines</a></li>
+                        <li><a href="">Strength of Materials</a></li>
+                    </ul>
+                    <li><b>Civil Engineering(CE)</b></li>
+                    <ul>
+                        <li><a href="">Engineering Survey</a></li>
+                        <li><a href="">Building Planning and Drawing</a></li>
+                        <li><a href="">Strength of Materials</a></li>
+                        <li><a href="">Construction Materials and Techniques</a></li>
+                        <li><a href="">Transportation Bridges and Tunnels</a></li>
+                    </ul>
+                    <li><b>Electrical Engineering(EE)</b></li>
+                    <ul>
+                        <li><a href="">Generation of Electric Power</a></li>
+                        <li><a href="">Electro-Magnetic Theory</a></li>
+                        <li><a href="">Electronic Devices And Digital Circuits</a></li>
+                        <li><a href="">Electrical Measurements and Instrumentation</a></li>
+                        <li><a href="">Circuit Analysis and Synthethis</a></li>
+                    </ul>
+                    <li><b>Information Technology(IT)</b></li>
+                    <ul>
+                        <li><a href="">Discrete Structures</a></li>
+                        <li><a href="">Digital Circuits and Systems</a></li>
+                        <li><a href="">Introduction to Problem Solving and Programming</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div id="thirdYear">
+                <h2 id="thirdYearNotes"><u><b>Third Year Notes</b></u></h2>
+                <input type="text" id="thirdYearBranch" name="myInput" onkeyup="mySearchFunction3()"
+                    placeholder="Enter subject..." class="searchBar">
+                <h4>Branches</h4>
+                <ul id="thirdYearSubjects">
+                    <li><b>Computer Science Engineering(CSE)</b></li>
+                    <ul>
+                        <li><a href="">Theory of Computation</a></li>
+                        <li><a href="">Software Engineering</a></li>
+                        <li><a href="">Computer Networks</a></li>
+                    </ul>
+                    <li><b>Mechanical Engineering(ME)</b></li>
+                    <ul>
+                        <li><a href="">Energy Conversion-II</a></li>
+                        <li><a href="">Machine Design-II</a></li>
+                        <li><a href="">Heat and Mass Transfer</a></li>
+                    </ul>
+                    <li><b>Civil Engineering(CE)</b></li>
+                    <ul>
+                        <li><a href="">Hydraulics and Hydraulics Machines</a></li>
+                        <li><a href="">RCC Design and Drawing</a></li>
+                        <li><a href="">Geotechnical Engineering-I</a></li>
+                    </ul>
+                    <li><b>Electrical Engineering(EE)</b></li>
+                    <ul>
+                        <li><a href="">Power System-I</a></li>
+                        <li><a href="">Electrical Machines-II</a></li>
+                        <li><a href="">Linear Control System</a></li>
+                    </ul>
+                    <li><b>Information Technology(IT)</b></li>
+                    <ul>
+                        <li><a href="">Computer Networks</a></li>
+                        <li><a href="">Compiler Design</a></li>
+                        <li><a href="">Software Engineering</a></li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div id="fourthYear">
+                <h2 id="fourthYearNotes"><b><u>Fourth Year Notes</u></b></h2>
+                <input type="text" id="fourthYearBranch" name="myInput" onkeyup="mySearchFunction4()"
+                    placeholder="Enter subject..." class="searchBar">
+                <h4>Branches</h4>
+                <ul id="fourthYearSubjects">
+                    <li><b>Computer Science Engineering(CSE)</b></li>
+                    <ul>
+                        <li><a href="">Fundamentals of Management, Economics and Accountancy</a></li>
+                        <li><a href="">Programming with XML</a></li>
+                        <li><a href="">Big Data Engineering</a></li>
+                    </ul>
+                    <li><b>Mechanical Engineering(ME)</b></li>
+                    <ul>
+                        <li><a href="">Robotics Engineering</a></li>
+                        <li><a href="">Operations Management</a></li>
+                        <li><a href="">Manufacturing Automation</a></li>
+                    </ul>
+                    <li><b>Civil Engineering(CE)</b></li>
+                    <ul>
+                        <li><a href="">Strength of Material</a></li>
+                        <li><a href="">Advance Design of RCC Structure</a></li>
+                        <li><a href="">Bridge Engineering</a></li>
+                    </ul>
+                    <li><b>Electrical Engineering(EE)</b></li>
+                    <ul>
+                        <li><a href="">Electrical Machine Designing</a></li>
+                        <li><a href="">Advance Power System Analysis</a></li>
+                        <li><a href="">EHV AC and DC Transmission</a></li>
+                    </ul>
+                    <li><b>Information Technology(IT)</b></li>
+                    <ul>
+                        <li><a href="">Machine Learning</a></li>
+                        <li><a href="">Cyber Ethics and Laws</a></li>
+                        <li><a href="">Graph Theory</a></li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h2 id="secondYearSyllabus"><u><b>Second Year Syllabus</b></u></h2>
+                <h4>Branches</h4>
+                <ul>
+                    <li><a href=""><b>Computer Science Engineering(CSE)</b></a></li>
+                    <li><a href=""><b>Mechanical Engineering(ME)</b></a></li>
+                    <li><a href=""><b>Civil Engineering(CE)</b></a></li>
+                    <li><a href=""><b>Electrical Engineering(EE)</b></a></li>
+                    <li><a href=""><b>Information Technology(IT)</b></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 id="thirdYearSyllabus"><u><b>Third Year Syllabus</b></u></h2>
+                <h4>Branches</h4>
+                <ul>
+                    <li><a href=""><b>Computer Science Engineering(CSE)</b></a></li>
+                    <li><a href=""><b>Mechanical Engineering(ME)</b></a></li>
+                    <li><a href=""><b>Civil Engineering(CE)</b></a></li>
+                    <li><a href=""><b>Electrical Engineering(EE)</b></a></li>
+                    <li><a href=""><b>Information Technology(IT)</b></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 id="fourthYearSyllabus"><u><b>Fourth Year Syllabus</b></u></h2>
+                <h4>Branches</h4>
+                <ul>
+                    <li><a href=""><b>Computer Science Engineering(CSE)</b></a></li>
+                    <li><a href=""><b>Mechanical Engineering(ME)</b></a></li>
+                    <li><a href=""><b>Civil Engineering(CE)</b></a></li>
+                    <li><a href=""><b>Electrical Engineering(EE)</b></a></li>
+                    <li><a href=""><b>Information Technology(IT)</b></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <script>
+            function mySearchFunction() {
+                let input = document.getElementById('firstYearSearch').value;
+                input = input.toLowerCase();
+                let list = document.getElementById('firstYearSubjects');
+                let item = list.getElementsByTagName('li');
+                for (var i = 0; i < item.length; i++) {
+                    if (item[i].innerHTML.toLowerCase().indexOf(input) > -1) {
+                        item[i].style.display = "list-item";
+
+                    }
+                    else {
+                        item[i].style.display = "none";
+                    }
+                }
+            }
+            function mySearchFunction2() {
+                let input = document.getElementById('secondYearBranch').value;
+                input = input.toLowerCase();
+                let list = document.getElementById('secondYearSubjects');
+                let item = list.getElementsByTagName('li');
+                for (var i = 0; i < item.length; i++) {
+                    if (item[i].innerHTML.toLowerCase().indexOf(input) > -1) {
+                        item[i].style.display = "list-item";
+
+                    }
+                    else {
+                        item[i].style.display = "none";
+                    }
+                }
+            }
+            function mySearchFunction3() {
+                let input = document.getElementById('thirdYearBranch').value;
+                input = input.toLowerCase();
+                let list = document.getElementById('thirdYearSubjects');
+                let item = list.getElementsByTagName('li');
+                for (var i = 0; i < item.length; i++) {
+                    if (item[i].innerHTML.toLowerCase().indexOf(input) > -1) {
+                        item[i].style.display = "list-item";
+
+                    }
+                    else {
+                        item[i].style.display = "none";
+                    }
+                }
+            }
+            function mySearchFunction4() {
+                let input = document.getElementById('fourthYearBranch').value;
+                input = input.toLowerCase();
+                let list = document.getElementById('fourthYearSubjects');
+                let item = list.getElementsByTagName('li');
+                for (var i = 0; i < item.length; i++) {
+                    if (item[i].innerHTML.toLowerCase().indexOf(input) > -1) {
+                        item[i].style.display = "list-item";
+
+                    }
+                    else {
+                        item[i].style.display = "none";
+                    }
+                }
+            }
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
