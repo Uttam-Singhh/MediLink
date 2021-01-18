@@ -12,10 +12,11 @@ It helps students to interact virtually.
 - :hammer: try to break the website by testing it to find any bugs. If you find any, check if there is an issue already open for it, if there is none, then report it
 
 ## Tools, Languages & Frameworks used
-* Django
+* Django (Backend Framework)
 * HTML
 * CSS
 * JavaScript
+* Bootstrap
 
 ## Steps to be followed in order to make valid contributions ☘️
 
