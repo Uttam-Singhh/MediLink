@@ -1,5 +1,5 @@
 # MediLink
-A Web App which connects students in our Campus (Medicaps University). 
+A Web App that connects students on our Campus (Medicaps University). 
 * People can write & share Blogs.
 * They can find their Class notes.
 * They can know their Subject Syllabus.
