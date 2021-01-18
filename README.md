@@ -36,4 +36,4 @@ It helps students to interact virtually.
 	git push origin
 	
 **5.** Create a Pull Request 🤟🏻 
-	<br>If you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button. We'll review your code and merge it if it passes all the tests ❤️
+	<br>Now you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button. We'll review your code and merge it if it passes all the tests.❤️
