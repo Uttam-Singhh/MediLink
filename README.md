@@ -1,5 +1,5 @@
 # MediLink
-A Web App which connects students in our Campus (Medicaps University). 
+A Web App that connects students on our Campus (Medicaps University). 
 * People can write & share Blogs.
 * They can find their Class notes.
 * They can know their Subject Syllabus.
@@ -12,10 +12,11 @@ It helps students to interact virtually.
 - :hammer: try to break the website by testing it to find any bugs. If you find any, check if there is an issue already open for it, if there is none, then report it
 
 ## Tools, Languages & Frameworks used
-* Django
+* Django (Backend Framework)
 * HTML
 * CSS
 * JavaScript
+* Bootstrap
 
 ## Steps to be followed in order to make valid contributions ☘️
 
@@ -35,4 +36,4 @@ It helps students to interact virtually.
 	git push origin
 	
 **5.** Create a Pull Request 🤟🏻 
-	<br>If you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button. We'll review your code and merge it if it passes all the tests ❤️
+	<br>Now you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button. We'll review your code and merge it if it passes all the tests.❤️
