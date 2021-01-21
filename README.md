@@ -26,6 +26,15 @@ It helps students to interact virtually.
 
 	git clone "https://github.com/<your-github-username>/MediLink"
 	
+* Download and install Python 3.7
+* Download and install Git.
+* Change directory to MediLink `$ cd MediLink`
+* Install virtualenv `$ pip3 install virtualenv`
+* Create a virtual environment `$ virtualenv env -p python3.7`  
+* Activate the env: `$ source env/bin/activate` (for linux) `> ./env/Scripts/activate` (for Windows PowerShell)
+* Install the requirements: `$ pip install -r requirements.txt`
+* Run the server `$ python manage.py runserver`
+	
 **3.** Make necessary changes and commit those changes
 
 	git add files-you-edited
