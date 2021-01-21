@@ -13,7 +13,7 @@
 <body>
 
     <style>
-        {
+        body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -21,16 +21,16 @@
 
         }
         #b1 {
-    background-color: black;
-    color: #ffffff;
-    font-size: 120%;
-    width: 15%;
-    height: 10%;
-    border-radius: 30%;
-    font-family: cursive;
-    position: absolute;
-    top: 40%;
-    left: 75%;
+            background-color: black;
+            color: #ffffff;
+            font-size: 120%;
+            width: 15%;
+            height: 10%;
+            border-radius: 30%;
+            font-family: cursive;
+            position: absolute;
+            top: 40%;
+            left: 75%;
         }
 
 
@@ -60,7 +60,7 @@
 
         nav li {
             list-style: none;
-            diplay: inline-block;
+            display: inline-block;
             padding-right: 10px;
             padding-left: 20px;
 
@@ -170,7 +170,7 @@
             width: 15%;
 
             display: flex;
-            align-item: center;
+            align-items: center;
         }
 
         .quantity {
@@ -196,12 +196,13 @@
             border-bottom: 1px solid lightgray;
         }
 
-        product ion-icon {
+        .product ion-icon {
             cursor: pointer;
         }
 
         .products {
-            width: 100% display:flex;
+            width: 100%;
+            display:flex;
             flex-wrap: wrap;
         }
 
@@ -213,7 +214,7 @@
             display: flex;
             justify-content: flex-end;
             width: 100%;
-            padding 10px 0;
+            padding: 10px 0;
         }
 
         .basketTotalTitle {
