@@ -28,8 +28,5 @@ urlpatterns = [
     path('posts/', include("posts.urls", namespace="posts")),
     path('groups/',include("groups.urls", namespace="groups")),
     path('study/', views.StudyPage, name='study'),
-    path('todolist/',views.ToDoList,name='todolist'),
-    path('buybooks/',views.BuyBooks,name='buybooks'),
-    path('buybooks/cart.html',views.Cart,name='cart'),
 ]
 

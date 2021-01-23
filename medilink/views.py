@@ -15,15 +15,6 @@ class HomePage(TemplateView):
 def StudyPage(request):
     return render(request,template_name='study.html')
 
-def ToDoList(request):
-    return render(request,template_name='todolist.html')
-
-def BuyBooks(request):
-    return render(request,template_name='buybooks.html')
-
-def Cart(request):
-    return render(request,template_name='cart.html')
-
 def get(self, request, *args, **kwargs):
     if request.user.is_authenticated:
         return HttpResponseRedirect(reverse("test"))
