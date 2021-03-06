@@ -35,14 +35,32 @@ It helps students to interact virtually.
 * Install the requirements: `$ pip install -r requirements.txt`
 * Run the server `$ python manage.py runserver`
 	
-**3.** Make necessary changes and commit those changes
+**3.** Make necessary changes and commit those changes.<br/>
+Remember never push anything to the Main branch.<br/>
+Always change your branch to "develop" using:
+
+        git checkout develop
+	
+Again check your current branch using:
+        
+	git branch
+	
+It should point *develop
+
+Now add your changes using:
 
 	git add files-you-edited
+If there are multiples file you can use:
+
+        git add .
+	
+Now create a commit message using:
+
 	git commit -m "<commit-message-goes-here>"
 	
 **4.** Push changes to GitHub
 
-	git push origin
+	git push origin develop
 	
 **5.** Create a Pull Request 🤟🏻 
 	<br>Now you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button and now write a summary of what changes you have done.( Attach images if required). We'll review your code and merge it if it passes all the tests.❤️
