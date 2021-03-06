@@ -30,7 +30,7 @@ It helps students to interact virtually.
 * Download and install Git.
 * Change directory to MediLink `$ cd MediLink`
 * Install virtualenv `$ pip3 install virtualenv`
-* Create a virtual environment `$ virtualenv env -p python3.7`  
+* Create a virtual environment `$ virtualenv env -p python3.7`( You can also use conda to create a virtual env)
 * Activate the env: `$ source env/bin/activate` (for linux) `> ./env/Scripts/activate` (for Windows PowerShell)
 * Install the requirements: `$ pip install -r requirements.txt`
 * Run the server `$ python manage.py runserver`
@@ -45,4 +45,4 @@ It helps students to interact virtually.
 	git push origin
 	
 **5.** Create a Pull Request 🤟🏻 
-	<br>Now you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button. We'll review your code and merge it if it passes all the tests.❤️
+	<br>Now you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button and now write a summary of what changes you have done.( Attach images if required). We'll review your code and merge it if it passes all the tests.❤️
