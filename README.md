@@ -28,7 +28,6 @@ It helps students to interact virtually.
 	
 * Download and install Python 3.7
 * Download and install Git.
-* Change directory to MediLink `$ cd MediLink`
 * Install virtualenv `$ pip3 install virtualenv`
 * Create a virtual environment `$ virtualenv env -p python3.7`( You can also use conda to create a virtual env)
 * Activate the env: `$ source env/bin/activate` (for linux) `> ./env/Scripts/activate` (for Windows PowerShell)
