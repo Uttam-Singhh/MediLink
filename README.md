@@ -36,9 +36,10 @@ It helps students to interact virtually.
 	
 **3.** Make necessary changes and commit those changes.<br/>
 Remember never push anything to the Main branch.<br/>
+
 Always change your branch to "develop" using:
 
-        git checkout develop
+    git checkout develop
 	
 Again check your current branch using:
         
