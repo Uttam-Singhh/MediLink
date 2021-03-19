@@ -52,7 +52,7 @@ Now add your changes using:
 	git add files-you-edited
 If there are multiples file you can use:
 
-        git add .
+    git add .
 	
 Now create a commit message using:
 
