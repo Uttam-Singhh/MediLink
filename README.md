@@ -15,7 +15,7 @@ It helps students to interact virtually.
 * Django (Backend Framework)
 * HTML
 * CSS
-* JavaScript
+* Javascript
 * Bootstrap
 
 ## Steps to be followed in order to make valid contributions ☘️
