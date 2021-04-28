@@ -63,4 +63,4 @@ Now create a commit message using:
 	git push origin develop
 	
 **5.** Create a Pull Request 🤟🏻 
-	<br>Now you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button and now write a summary of what changes you have done.( Attach images if required). We'll review your code and merge it if it passes all the tests.❤️
+	<br>Now you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button and now write a summary of what changes you have done.( Attach images if required). I will review your code and merge it if it passes all the tests.❤️
