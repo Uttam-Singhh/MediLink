@@ -1,6 +1,6 @@
 # MediLink
 A Web App that connects students on our Campus. 
-* People can write & share Blogs.
+* People can write & share Blogs and can create groups.
 * They can find their Class notes.
 * They can know their Subject Syllabus.
 * Anyone can post a Question & can Answer.
